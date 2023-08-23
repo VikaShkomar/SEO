@@ -1,1 +1,4 @@
-Redirect 301 /SEO/kul.html https://vikashkomar.github.io/SEO/kulyampa.html
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^vikashkomar.github.io/SEO/kul.html [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.example.com [NC]
+RewriteRule ^(.*)$ https://vikashkomar.github.io/SEO/kulyampa.html$1 [L,R=301,NC]
